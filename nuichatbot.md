@@ -13,6 +13,13 @@ Bạn chỉ phải trả **1 lần duy nhất** cho mỗi page. Trả trong vòn
 
 __Cách trả phí:__
 1. Chuyển khoản qua TK với nội dung `nuichatbot-(tên page)`:
-- Tài khoản
+Tài khoản 2200201279439, chủ TK Bùi Thị Xuân, NH Agribank chi nhánh Hà Tây.
 2. Chụp lại phiếu, hoá đơn hoặc màn hình kết quả chuyển khoản.
-3. Vào trang sau: , chọn page và bấm vào nút "Đăng ký page trả phí", sau đó điền các thông tin cần thiết
+3. Vào trang sau: https://nuichatbot.ngxson.com/#!/paid , chọn page và bấm vào nút "Đăng ký page trả phí", sau đó điền các thông tin cần thiết.
+
+<a name="lienhe"></a>
+# Liên hệ
+
+1. Email: contact@ngxson.com
+2. Số điện thoại (số nước ngoài, xin chỉ liên hệ khi thực sự cần thiết)
+<img src="https://raw.githubusercontent.com/ngxson/storeData/master/sdt.jpg" width="150px">
