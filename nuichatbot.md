@@ -1,6 +1,8 @@
 <a name="chuyenapi"></a>  
 # Hướng dẫn chuyển đổi sang API của NuiChatbot:  
   
+**API này đang trong giai đoạn thử nghiệm**. Nếu bạn gặp lỗi, hãy liên hệ qua fanpage NuiChatbot.
+  
 - Bạn cần lấy token (đầu NUIEAA...) từ web của NuiChatbot.  
 - Đối với những chỗ trong code của bạn tạo request tới graph.facebook.com/..., chuyển thành api.chatbot.ngxson.com/graph/...  
 - Chúng mình hỗ trợ các endpoint và method như bảng sau:  
@@ -22,7 +24,7 @@ Ghi chú [1]: Để sử dụng API Broadcast, bạn cần xin quyền page_mess
 <a name="gioihanloi"></a>  
 # Giới hạn số lần gặp lỗi  
   
-  Để tránh bị spam lỗi, và cũng là đảm bảo các bạn chú ý hơn về hiệu năng server, chúng mình sẽ có các giới hạn số lần lỗi.  
+Để tránh bị spam lỗi, và cũng là đảm bảo các bạn chú ý hơn về hiệu năng server, chúng mình sẽ có các giới hạn số lần lỗi.  
   
 Lỗi có thể do gửi sai dạng dữ liệu, gửi tin nhắn ngoài khung 24+1,... Để tránh vượt giới hạn, bên server bạn phải đc lập trình để nhớ và không lặp lại request lỗi.  
   
