@@ -7,17 +7,40 @@
 
 |graph.facebook.com|api.chatbot.ngxson.com|method|Ghi chú|  
 |-------|-------|------|------|
-/{user-id}|/graph/{user-id}|GET||
-/{page-id}/message|/graph/{page-id}/message|POST||
-/{page-id}/messenger_profile|/graph/{page-id}/messenger_profile|POST, GET||
-/{page-id}/broadcast_messages|/graph/{page-id}/broadcast_messages|POST|[[1]](#chuyenapi1)|
-/{page-id}/message_creatives|/graph/{page-id}/message_creatives|POST|[[1]](#chuyenapi1)|
+|/{user-id}|/graph/{user-id}|GET||
+|/{page-id}/message|/graph/{page-id}/message|POST||
+|/{page-id}/messenger_profile|/graph/{page-id}/messenger_profile|POST, GET||
+|/{page-id}/broadcast_messages|/graph/{page-id}/broadcast_messages|POST|[[1]](#chuyenapi1)|
+|/{page-id}/message_creatives|/graph/{page-id}/message_creatives|POST|[[1]](#chuyenapi1)|
 
 - Ví dụ:  https://graph.facebook.com/me/message sẽ phải đổi thành https://api.chatbot.ngxson.com/graph/me/message
 - **Lưu ý quan trọng**: Đừng quên tham khảo [Giới hạn số lần gặp lỗi](#gioihanloi)
 
 <a name="chuyenapi1"></a> 
 Ghi chú [1]: Để sử dụng API Broadcast, bạn cần xin quyền page_messaging_subscription từ phần "Cài đặt page" trên facebook.
+
+<a name="gioihanloi"></a>  
+# Giới hạn số lần gặp lỗi  
+  
+  Để tránh bị spam lỗi, và cũng là đảm bảo các bạn chú ý hơn về hiệu năng server, chúng mình sẽ có các giới hạn số lần lỗi.  
+  
+Lỗi có thể do gửi sai dạng dữ liệu, gửi tin nhắn ngoài khung 24+1,... Để tránh vượt giới hạn, bên server bạn phải đc lập trình để nhớ và không lặp lại request lỗi.  
+  
+__Đối với webhook__
+- Giới hạn 500 lần lỗi / ngày. Nếu vượt quá, webhook sẽ bị xoá đối với page đó, và bạn sẽ phải đăng ký lại qua web của NuiChatbot.  
+- Bạn sẽ nhận đc thông báo lỗi qua inbox khi đạt ngưỡng 350 lỗi / ngày.  
+  
+__Đối với Graph API__
+- Khi số lỗi đạt đến "warning level", bạn sẽ nhận đc 1 cảnh báo qua inbox.
+- Nếu vượt quá "max level", bạn sẽ bị **ngắt kết nối** khỏi app. Điều này có nghĩa là webhook+token của **tất cả các page** bạn đã đăng ký đều sẽ bị xoá. (Xin lỗi bạn nếu điều này hơi quá đáng, nhưng facebook không cho revoke 1 token duy nhất và nó chỉ cho ngắt kết nối với app)  
+
+|endpoint|warning level|max level|
+|-----|-----|-----|
+|/graph/{user-id}|3500 lỗi / ngày|5000 lỗi / ngày|
+|/graph/{page-id}/message|8000 lỗi / ngày|10000 lỗi / ngày|
+|/graph/{page-id}/messenger_profile|50 lỗi / ngày|150 lỗi / ngày|
+|/graph/{page-id}/broadcast_messages|50 lỗi / ngày|150 lỗi / ngày|
+|/graph/{page-id}/message_creatives|50 lỗi / ngày|150 lỗi / ngày|
 
 <a name="banggia"></a>
 # Bảng giá Nui Chatbot
