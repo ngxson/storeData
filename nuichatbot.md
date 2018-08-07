@@ -26,7 +26,9 @@ Ghi chú [1]: Để sử dụng API Broadcast, bạn cần xin quyền page_mess
   
 Để tránh bị spam lỗi, và cũng là đảm bảo các bạn chú ý hơn về hiệu năng server, chúng mình sẽ có các giới hạn số lần lỗi.  
   
-Lỗi có thể do gửi sai dạng dữ liệu, gửi tin nhắn ngoài khung 24+1,... Để tránh vượt giới hạn, bên server bạn phải đc lập trình để nhớ và không lặp lại request lỗi.  
+Lỗi có thể do gửi sai dạng dữ liệu, gửi tin nhắn ngoài khung 24+1,... Để tránh vượt giới hạn, bên server bạn phải đc lập trình để nhớ và không lặp lại request lỗi.
+
+Bộ đếm số lỗi sẽ đc reset vào lúc 4 giờ 20 hằng ngày
   
 __Đối với webhook__
 - Giới hạn 500 lần lỗi / ngày. Nếu vượt quá, webhook sẽ bị xoá đối với page đó, và bạn sẽ phải đăng ký lại qua web của NuiChatbot.  
