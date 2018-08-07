@@ -30,7 +30,7 @@ Lỗi có thể do gửi sai dạng dữ liệu, gửi tin nhắn ngoài khung 2
   
 __Đối với webhook__
 - Giới hạn 500 lần lỗi / ngày. Nếu vượt quá, webhook sẽ bị xoá đối với page đó, và bạn sẽ phải đăng ký lại qua web của NuiChatbot.  
-- Bạn sẽ nhận đc thông báo lỗi qua inbox khi đạt ngưỡng 350 lỗi / ngày.  
+- Bạn sẽ nhận đc 1 cảnh báo qua inbox khi đạt ngưỡng 350 lỗi / ngày.  
   
 __Đối với Graph API__
 - Khi số lỗi đạt đến "warning level", bạn sẽ nhận đc 1 cảnh báo qua inbox.
