@@ -1,3 +1,24 @@
+<a name="chuyenapi"></a>  
+# Hướng dẫn chuyển đổi sang API của NuiChatbot:  
+  
+- Bạn cần lấy token (đầu NUIEAA...) từ web của NuiChatbot.  
+- Đối với những chỗ trong code của bạn tạo request tới graph.facebook.com/..., chuyển thành api.chatbot.ngxson.com/graph/...  
+- Chúng mình hỗ trợ các endpoint và method như bảng sau:  
+
+|graph.facebook.com|api.chatbot.ngxson.com|method|Ghi chú|  
+|-------|-------|------|------|
+/{user-id}|/graph/{user-id}|GET||
+/{page-id}/message|/graph/{page-id}/message|POST||
+/{page-id}/messenger_profile|/graph/{page-id}/messenger_profile|POST, GET||
+/{page-id}/broadcast_messages|/graph/{page-id}/broadcast_messages|POST|[[1]](#chuyenapi1)|
+/{page-id}/message_creatives|/graph/{page-id}/message_creatives|POST|[[1]](#chuyenapi1)|
+
+- Ví dụ:  https://graph.facebook.com/me/message sẽ phải đổi thành https://api.chatbot.ngxson.com/graph/me/message
+- **Lưu ý quan trọng**: Đừng quên tham khảo [Giới hạn số lần gặp lỗi](#gioihanloi)
+
+<a name="chuyenapi1"></a> 
+Ghi chú [1]: Để sử dụng API Broadcast, bạn cần xin quyền page_messaging_subscription từ phần "Cài đặt page" trên facebook.
+
 <a name="banggia"></a>
 # Bảng giá Nui Chatbot
 
