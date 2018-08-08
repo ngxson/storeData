@@ -10,8 +10,8 @@ Nếu nhận đc code khác 200 hoặc timeout (quá 12s), NuiChatbot sẽ tự 
 
 - Nếu quá **600 lỗi**, bạn sẽ nhận đc 1 cảnh báo
 - Nếu quá **800 lỗi**, bạn sẽ bị **xóa webhook**
-- Khi bị xóa webhook, bạn cần lên web NuiChatbot để cài lại webhook
-- Bộ đếm số lỗi sẽ đc reset vào 4h20 hằng này, hoặc ngay khi bạn đặt lại webhook
+
+Khi bị xóa webhook, bạn cần lên web NuiChatbot để cài lại webhook. Bộ đếm số lỗi sẽ đc reset vào 4h20 hằng ngày, hoặc ngay khi bạn đặt lại webhook
 
 <a name="goiywebhook"></a>  
 __Gợi ý để tránh gặp lỗi webhook__
