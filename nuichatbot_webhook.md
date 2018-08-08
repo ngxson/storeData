@@ -1,7 +1,7 @@
 <a name="yeucauwebhook"></a>  
 # NuiChatbot - Yêu cầu đối với webhook
   
-Để đảm bảo chắc chắn bên server bạn nhận đc webhook, cũng như hiệu năng server NuiChatbot, webhook cần đạt những tiêu chuẩn nhất định. Các tiêu chuẩn này được mình làm giống nhất với [webhook chuẩn của facebook](https://developers.facebook.com/docs/messenger-platform/webhook#unsubscribe) nhất có thể:
+Để đảm bảo chắc chắn bên server bạn nhận đc webhook, cũng như hiệu năng server NuiChatbot, webhook cần đạt những tiêu chuẩn nhất định. Các tiêu chuẩn này được mình làm giống với [webhook chuẩn của facebook](https://developers.facebook.com/docs/messenger-platform/webhook#unsubscribe) nhất có thể:
 
 - Phản hồi tất cả sự kiện webhook bằng code 200.
 - Phản hồi tất cả sự kiện webhook trong tối đa 12 giây.
