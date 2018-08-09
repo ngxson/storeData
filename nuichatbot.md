@@ -31,7 +31,7 @@ Lỗi có thể do gửi sai dạng dữ liệu, gửi tin nhắn ngoài khung 2
 Bộ đếm số lỗi sẽ đc reset vào lúc 4 giờ 20 hằng ngày
   
 __Đối với webhook__
-Tham khảo tại: [Yêu cầu đối với webhook](https://github.com/ngxson/storeData/blob/master/nuichatbot_webhook.md)
+- Tham khảo tại: [Yêu cầu đối với webhook](https://github.com/ngxson/storeData/blob/master/nuichatbot_webhook.md)
   
 __Đối với Graph API__
 - Khi số lỗi đạt đến "warning level", bạn sẽ nhận đc 1 cảnh báo qua inbox.
