@@ -31,8 +31,7 @@ Lỗi có thể do gửi sai dạng dữ liệu, gửi tin nhắn ngoài khung 2
 Bộ đếm số lỗi sẽ đc reset vào lúc 4 giờ 20 hằng ngày
   
 __Đối với webhook__
-- Giới hạn 500 lần lỗi / ngày. Nếu vượt quá, webhook sẽ bị xoá đối với page đó, và bạn sẽ phải đăng ký lại qua web của NuiChatbot.  
-- Bạn sẽ nhận đc 1 cảnh báo qua inbox khi đạt ngưỡng 350 lỗi / ngày.  
+Tham khảo tại: [Yêu cầu đối với webhook](https://github.com/ngxson/storeData/blob/master/nuichatbot_webhook.md)
   
 __Đối với Graph API__
 - Khi số lỗi đạt đến "warning level", bạn sẽ nhận đc 1 cảnh báo qua inbox.
@@ -41,12 +40,13 @@ __Đối với Graph API__
 
 |endpoint|warning level|max level|
 |-----|-----|-----|
-|/graph/{user-id}|3500 lỗi / ngày|5000 lỗi / ngày|
-|/graph/{page-id}/message|8000 lỗi / ngày|10000 lỗi / ngày|
+|/graph/{user-id}|3500 lỗi / ngày|6000 lỗi / ngày|
+|/graph/{page-id}/message|8000 lỗi / ngày|14000 lỗi / ngày|
 |/graph/{page-id}/messenger_profile|50 lỗi / ngày|150 lỗi / ngày|
 |/graph/{page-id}/broadcast_messages|50 lỗi / ngày|150 lỗi / ngày|
 |/graph/{page-id}/message_creatives|50 lỗi / ngày|150 lỗi / ngày|
 
+---
 <a name="banggia"></a>
 # Bảng giá Nui Chatbot
 
