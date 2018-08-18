@@ -47,25 +47,6 @@ __Đối với Graph API__
 |/graph/{page-id}/message_creatives|50 lỗi / ngày|150 lỗi / ngày|
 
 ---
-<a name="banggia"></a>
-# Bảng giá Nui Chatbot
-
-Bảng giá này chỉ áp dụng với các page **có lợi nhuận** (ví dụ: page bán hàng, chăm sóc khách hàng, thu tiền từ nội dung quảng cáo qua inbox,...)
-
-Bạn chỉ phải trả **1 lần duy nhất** cho mỗi page. Trả trong vòng 7 ngày kể từ khi bạn đăng ký Lượt like được tính vào lúc bạn đăng ký page trên hệ thống Nui Chatbot.
-
-| Số Like Page | Giá |
-|----------|---------|
-| dưới 800 likes | 100.000đ |
-| từ 800 đến 2500 likes | 180.000đ |
-| trên 2500 likes | 300.000đ |
-
-__Cách trả phí:__
-1. Chuyển khoản qua TK với nội dung `nuichatbot-(tên page)`:
-  * Tài khoản 2200201279439, chủ TK Bùi Thị Xuân, NH Agribank chi nhánh Hà Tây.
-2. Chụp lại phiếu, hoá đơn hoặc màn hình kết quả chuyển khoản.
-3. Vào trang sau: https://nuichatbot.ngxson.com/#!/paid , chọn page và bấm vào nút "Đăng ký page trả phí", sau đó điền các thông tin cần thiết.
-
 <a name="lienhe"></a>
 # Liên hệ
 
