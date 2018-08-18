@@ -35,8 +35,7 @@ __Đối với webhook__
   
 __Đối với Graph API__
 - Khi số lỗi đạt đến "warning level", bạn sẽ nhận đc 1 cảnh báo qua inbox.
-- Nếu vượt quá "max level", bạn sẽ bị **ngắt kết nối** khỏi app. Điều này có nghĩa là webhook+token của **tất cả các page** bạn đã đăng ký đều sẽ bị xoá. (Xin lỗi bạn nếu điều này hơi quá đáng, nhưng facebook không cho revoke 1 token duy nhất và nó chỉ cho ngắt kết nối với app)
-- Để tiếp tục sử dụng, bạn cần vào lại web NuiChatbot, đăng ký lại webhook+token cho **tất cả các page**
+- Nếu vượt quá "max level", token bạn đang dùng sẽ bị khóa. Bạn sẽ cần lên web NuiChatbot để lấy token mới.
 
 |endpoint|warning level|max level|
 |-----|-----|-----|
