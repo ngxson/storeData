@@ -14,5 +14,5 @@ Chính sách sẽ đảm bảo người dùng không bị làm phiền quá nhi�
 **Lưu ý:** hệ thống sẽ **không tự động gửi quảng cáo** nếu user không inbox đến page, tránh làm người dùng cảm thấy phiền.
   
 **Format quảng cáo:**  
-- Quảng cáo gồm 8 card chứa thông tin sản phẩm theo chiều ngang (generic template)  
+- Quảng cáo gồm 9 cards chứa thông tin quảng cáo theo chiều ngang (generic template)  
 - 1 card cuối cùng giải thích rằng chatbot của bạn được trợ giúp bởi NuiChatbot. Card này chứa 1 mã checkcode để tránh bị giả mạo.
