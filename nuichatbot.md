@@ -4,18 +4,19 @@
 **API này đang trong giai đoạn thử nghiệm**. Nếu bạn gặp lỗi, hãy liên hệ qua fanpage NuiChatbot.
   
 - Bạn cần lấy token (đầu NUIEAA...) từ web của NuiChatbot.  
-- Đối với những chỗ trong code của bạn tạo request tới graph.facebook.com/..., chuyển thành api.chatbot.ngxson.com/graph/...  
+- Đối với những chỗ trong code của bạn tạo request tới `graph.facebook.com/...`, chuyển thành `api.chatbot.ngxson.com/graph/...`
+- Bỏ những chỗ có version, ví dụ `/v2.6/messages` thì phải sửa thành `/messages`
 - Chúng mình hỗ trợ các endpoint và method như bảng sau:  
 
 |graph.facebook.com|api.chatbot.ngxson.com|method|Ghi chú|  
 |-------|-------|------|------|
 |/{user-id}|/graph/{user-id}|GET||
-|/{page-id}/message|/graph/{page-id}/message|POST||
+|/{page-id}/messages|/graph/{page-id}/messages|POST||
 |/{page-id}/messenger_profile|/graph/{page-id}/messenger_profile|POST, GET||
 |/{page-id}/broadcast_messages|/graph/{page-id}/broadcast_messages|POST|[[1]](#chuyenapi1)|
 |/{page-id}/message_creatives|/graph/{page-id}/message_creatives|POST|[[1]](#chuyenapi1)|
 
-- **Ví dụ**:  https://graph.facebook.com/me/message sẽ phải đổi thành https://api.chatbot.ngxson.com/graph/me/message
+- **Ví dụ**:  `https://graph.facebook.com/me/messages` sẽ phải đổi thành `https://api.chatbot.ngxson.com/graph/me/messages`
 - **Lưu ý quan trọng**: Đừng quên tham khảo [Giới hạn số lần gặp lỗi](#gioihanloi)
 
 <a name="chuyenapi1"></a> 
@@ -40,7 +41,7 @@ __Đối với Graph API__
 |endpoint|warning level|max level|
 |-----|-----|-----|
 |/graph/{user-id}|3500 lỗi / ngày|6000 lỗi / ngày|
-|/graph/{page-id}/message|8000 lỗi / ngày|14000 lỗi / ngày|
+|/graph/{page-id}/messages|8000 lỗi / ngày|14000 lỗi / ngày|
 |/graph/{page-id}/messenger_profile|50 lỗi / ngày|150 lỗi / ngày|
 |/graph/{page-id}/broadcast_messages|50 lỗi / ngày|150 lỗi / ngày|
 |/graph/{page-id}/message_creatives|50 lỗi / ngày|150 lỗi / ngày|
