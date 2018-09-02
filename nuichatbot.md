@@ -6,7 +6,8 @@
 - Bạn cần lấy token (đầu NUIEAA...) từ web của NuiChatbot.  
 - Đối với những chỗ trong code của bạn tạo request tới `graph.facebook.com/...`, chuyển thành `api.chatbot.ngxson.com/graph/...`
 - Bỏ những chỗ có version, ví dụ `/v2.6/messages` thì phải sửa thành `/messages`
-- Chúng mình hỗ trợ các endpoint và method như bảng sau:  
+- Bỏ `https`, thay bằng `http` thường [[2]](#chuyenapi2)
+- Chúng mình **chỉ hỗ trợ** các endpoint và method như bảng sau:  
 
 |graph.facebook.com|api.chatbot.ngxson.com|method|Ghi chú|  
 |-------|-------|------|------|
@@ -16,11 +17,14 @@
 |/{page-id}/broadcast_messages|/graph/{page-id}/broadcast_messages|POST|[[1]](#chuyenapi1)|
 |/{page-id}/message_creatives|/graph/{page-id}/message_creatives|POST|[[1]](#chuyenapi1)|
 
-- **Ví dụ**:  `https://graph.facebook.com/me/messages` sẽ phải đổi thành `https://api.chatbot.ngxson.com/graph/me/messages`
+- **Ví dụ**:  `https://graph.facebook.com/me/messages` sẽ phải đổi thành `http://api.chatbot.ngxson.com/graph/me/messages`
 - **Lưu ý quan trọng**: Đừng quên tham khảo [Giới hạn số lần gặp lỗi](#gioihanloi)
 
 <a name="chuyenapi1"></a> 
 **Ghi chú [1]**: Để sử dụng API Broadcast, bạn cần xin quyền page_messaging_subscription từ phần "Cài đặt page" trên facebook.
+
+<a name="chuyenapi2"></a> 
+**Ghi chú [2]**: Nếu bạn cần dùng đến https, hãy dùng domain **apis.chatbot.ngxson.com**. Tuy nhiên, mình không chắc về sự ổn định của domain này (có thể down tới 2-3 lần trong 1 tháng)
 
 <a name="gioihanloi"></a>  
 # Giới hạn số lần gặp lỗi  
