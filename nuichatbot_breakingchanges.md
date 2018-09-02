@@ -1,6 +1,6 @@
 # Các thay đổi quan trọng
   
-<a name="02092018"></a>  
+<a name="c02092018"></a>  
 __02/09/2018__
 Do máy chủ SSL của NuiChatbot thiếu ổn định, hệ thống có 1 vài thay đổi như sau để tránh bị gián đoạn trong tương lai:
 
