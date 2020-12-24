@@ -17,7 +17,7 @@
 |/{page-id}/broadcast_messages|/graph/{page-id}/broadcast_messages|POST|[[1]](#chuyenapi1)|
 |/{page-id}/message_creatives|/graph/{page-id}/message_creatives|POST|[[1]](#chuyenapi1)|
 
-- **Ví dụ**:  `https://graph.facebook.com/me/messages` sẽ phải đổi thành `http://api.chatbot.ngxson.com/graph/me/messages`
+- **Ví dụ**:  `https://graph.facebook.com/v2.6/me/messages` sẽ phải đổi thành `http://api.chatbot.ngxson.com/graph/me/messages`
 - **Lưu ý quan trọng**: Đừng quên tham khảo [Giới hạn số lần gặp lỗi](#gioihanloi)
 
 <a name="chuyenapi1"></a> 
